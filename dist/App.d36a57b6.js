@@ -33298,7 +33298,7 @@ var _default = GridExamples;
 exports.default = _default;
 },{"react":"../node_modules/react/index.js","@emotion/styled":"../node_modules/@emotion/styled/dist/styled.browser.esm.js"}],"../images/mondrian-painting.png":[function(require,module,exports) {
 module.exports = "/mondrian-painting.36d9e74f.png";
-},{}],"lessons/grid/CodeDemo.js":[function(require,module,exports) {
+},{}],"lessons/grid/MondrianPainting.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33375,11 +33375,12 @@ const ContentContainer = _styled.default.div`
     .col-7 {
         grid-column: 3 / 4;
         grid-row: 4 / 5;
-        background-color: green;
+        background-color: yellow;
+        color: black;
     }
     `;
 
-const CodeDemo = () => {
+const MondrianPainting = () => {
   return /*#__PURE__*/_react.default.createElement(ContentContainer, {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("div", {
@@ -33405,7 +33406,7 @@ const CodeDemo = () => {
   }, "g")));
 };
 
-var _default = CodeDemo;
+var _default = MondrianPainting;
 exports.default = _default;
 },{"react":"../node_modules/react/index.js","@emotion/styled":"../node_modules/@emotion/styled/dist/styled.browser.esm.js","../../../images/mondrian-painting.png":"../images/mondrian-painting.png"}],"components/Navbar.js":[function(require,module,exports) {
 "use strict";
@@ -33509,7 +33510,7 @@ var _Home = _interopRequireDefault(require("./Home"));
 
 var _GridExamples = _interopRequireDefault(require("./lessons/grid/GridExamples"));
 
-var _CodeDemo = _interopRequireDefault(require("./lessons/grid/CodeDemo"));
+var _MondrianPainting = _interopRequireDefault(require("./lessons/grid/MondrianPainting"));
 
 var _Navbar = _interopRequireDefault(require("./components/Navbar"));
 
@@ -33524,13 +33525,13 @@ const App = () => {
     path: "/"
   }), /*#__PURE__*/_react.default.createElement(_GridExamples.default, {
     path: "/grid-examples/example-1"
-  }), /*#__PURE__*/_react.default.createElement(_CodeDemo.default, {
+  }), /*#__PURE__*/_react.default.createElement(_MondrianPainting.default, {
     path: "/grid-examples/code-demo"
   })), /*#__PURE__*/_react.default.createElement(_Footer.default, null)));
 };
 
 (0, _reactDom.render)(_react.default.createElement(App), document.getElementById("root"));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","@reach/router":"../node_modules/@reach/router/es/index.js","./Home":"Home.js","./lessons/grid/GridExamples":"lessons/grid/GridExamples.js","./lessons/grid/CodeDemo":"lessons/grid/CodeDemo.js","./components/Navbar":"components/Navbar.js","./components/Footer":"components/Footer.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","@reach/router":"../node_modules/@reach/router/es/index.js","./Home":"Home.js","./lessons/grid/GridExamples":"lessons/grid/GridExamples.js","./lessons/grid/MondrianPainting":"lessons/grid/MondrianPainting.js","./components/Navbar":"components/Navbar.js","./components/Footer":"components/Footer.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

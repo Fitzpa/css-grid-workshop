@@ -64,10 +64,11 @@ const ContentContainer = styled.div`
     .col-7 {
         grid-column: 3 / 4;
         grid-row: 4 / 5;
-        background-color: green;
+        background-color: yellow;
+        color: black;
     }
     `
-const CodeDemo = () => {
+const MondrianPainting = () => {
     return (
         <ContentContainer className="container">
             <div className="m-b-lg p-t-md p-b-md">
@@ -89,4 +90,4 @@ const CodeDemo = () => {
     )
 }
 
-export default CodeDemo
+export default MondrianPainting

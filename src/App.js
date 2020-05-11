@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import { Router } from "@reach/router";
 import Home from "./Home";
 import GridExamples from "./lessons/grid/GridExamples";
-import CodeDemo from './lessons/grid/CodeDemo'
+import MondrianPainting from './lessons/grid/MondrianPainting'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
@@ -16,7 +16,7 @@ const App = () => {
         <Router>
           <Home path="/" />
           <GridExamples path="/grid-examples/example-1" />
-          <CodeDemo path="/grid-examples/code-demo" />
+          <MondrianPainting path="/grid-examples/code-demo" />
         </Router>
         <Footer />
       </div>
