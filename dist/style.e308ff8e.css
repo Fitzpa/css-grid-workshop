@@ -50,16 +50,20 @@ p {
 
 a {
   text-decoration: none;
+  font-weight: 500;
+  color: lightblue;
+}
+
+.button {
   color: white;
   background-color: transparent;
   border: solid white 2px;
   border-radius: 15px;
   padding: 10px 20px;
   transition: ease all 0.3s;
-  font-weight: 500;
 }
 
-a:hover {
+.button:hover {
   background-color: white;
   color: #025373;
 }
@@ -68,6 +72,11 @@ li {
   display: flex;
   list-style: none;
   height: auto;
+}
+
+.page-container {
+  min-height: 100vh;
+  position: relative;
 }
 
 .container {

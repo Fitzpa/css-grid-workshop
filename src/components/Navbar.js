@@ -3,14 +3,22 @@ import { Link } from '@reach/router'
 import styled from '@emotion/styled'
 
 const ContentContainer = styled.nav`
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 20px;
+    padding-bottom: 20px;
 
+    .title {
+        color: white;
+    }
 `
 
 
 const Navbar = () => {
     return (
-        <ContentContainer className="container">
-            <Link to="/"><h1>Grid Workshop</h1></Link>
+        <ContentContainer>
+            <div className="container">
+                <Link to="/"><h1 className="title">Grid Workshop</h1></Link>
+            </div>
         </ContentContainer>
     )
 }

@@ -14,8 +14,8 @@ const Home = () => {
         <ContentContainer className="container">
             <h1>HomePage</h1>
             <ul className="wrapper">
-                <li><Link to="/grid-examples/example-1">Grid Example 1</Link></li>
-                <li className="list-item"><Link to="/grid-examples/code-demo">Grid Code Demo</Link></li>
+                <li><Link to="/grid-examples/example-1" className="button">Grid Example 1</Link></li>
+                <li className="list-item"><Link to="/grid-examples/code-demo" className="button">Grid Code Demo</Link></li>
             </ul>
         </ContentContainer >
     )

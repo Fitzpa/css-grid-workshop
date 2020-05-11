@@ -30937,7 +30937,7 @@ var createRoute = function createRoute(basepath) {
 var shouldNavigate = function shouldNavigate(event) {
   return !event.defaultPrevented && event.button === 0 && !(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
 }; ////////////////////////////////////////////////////////////////////////
-},{"react":"../node_modules/react/index.js","prop-types":"../node_modules/prop-types/index.js","invariant":"../node_modules/invariant/browser.js","create-react-context":"../node_modules/create-react-context/lib/index.js","react-lifecycles-compat":"../node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js","./lib/utils":"../node_modules/@reach/router/es/lib/utils.js","./lib/history":"../node_modules/@reach/router/es/lib/history.js"}],"../node_modules/@emotion/styled-base/node_modules/@babel/runtime/helpers/defineProperty.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","prop-types":"../node_modules/prop-types/index.js","invariant":"../node_modules/invariant/browser.js","create-react-context":"../node_modules/create-react-context/lib/index.js","react-lifecycles-compat":"../node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js","./lib/utils":"../node_modules/@reach/router/es/lib/utils.js","./lib/history":"../node_modules/@reach/router/es/lib/history.js"}],"../node_modules/@babel/runtime/helpers/defineProperty.js":[function(require,module,exports) {
 function _defineProperty(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
@@ -30997,7 +30997,7 @@ var index = (0, _memoize.default)(function (prop) {
 );
 var _default = index;
 exports.default = _default;
-},{"@emotion/memoize":"../node_modules/@emotion/memoize/dist/memoize.browser.esm.js"}],"../node_modules/@emotion/core/node_modules/@babel/runtime/helpers/inheritsLoose.js":[function(require,module,exports) {
+},{"@emotion/memoize":"../node_modules/@emotion/memoize/dist/memoize.browser.esm.js"}],"../node_modules/@babel/runtime/helpers/inheritsLoose.js":[function(require,module,exports) {
 function _inheritsLoose(subClass, superClass) {
   subClass.prototype = Object.create(superClass.prototype);
   subClass.prototype.constructor = subClass;
@@ -32936,7 +32936,7 @@ var ClassNames = withEmotionCache(function (props, context) {
   });
 });
 exports.ClassNames = ClassNames;
-},{"@babel/runtime/helpers/inheritsLoose":"../node_modules/@emotion/core/node_modules/@babel/runtime/helpers/inheritsLoose.js","react":"../node_modules/react/index.js","@emotion/cache":"../node_modules/@emotion/cache/dist/cache.browser.esm.js","@emotion/utils":"../node_modules/@emotion/utils/dist/utils.browser.esm.js","@emotion/serialize":"../node_modules/@emotion/serialize/dist/serialize.browser.esm.js","@emotion/sheet":"../node_modules/@emotion/sheet/dist/sheet.browser.esm.js","@emotion/css":"../node_modules/@emotion/css/dist/css.browser.esm.js"}],"../node_modules/@emotion/styled-base/dist/styled-base.browser.esm.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/inheritsLoose":"../node_modules/@babel/runtime/helpers/inheritsLoose.js","react":"../node_modules/react/index.js","@emotion/cache":"../node_modules/@emotion/cache/dist/cache.browser.esm.js","@emotion/utils":"../node_modules/@emotion/utils/dist/utils.browser.esm.js","@emotion/serialize":"../node_modules/@emotion/serialize/dist/serialize.browser.esm.js","@emotion/sheet":"../node_modules/@emotion/sheet/dist/sheet.browser.esm.js","@emotion/css":"../node_modules/@emotion/css/dist/css.browser.esm.js"}],"../node_modules/@emotion/styled-base/dist/styled-base.browser.esm.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33146,7 +33146,7 @@ var createStyled = function createStyled(tag, options) {
 
 var _default = createStyled;
 exports.default = _default;
-},{"@babel/runtime/helpers/defineProperty":"../node_modules/@emotion/styled-base/node_modules/@babel/runtime/helpers/defineProperty.js","react":"../node_modules/react/index.js","@emotion/is-prop-valid":"../node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js","@emotion/core":"../node_modules/@emotion/core/dist/core.browser.esm.js","@emotion/utils":"../node_modules/@emotion/utils/dist/utils.browser.esm.js","@emotion/serialize":"../node_modules/@emotion/serialize/dist/serialize.browser.esm.js"}],"../node_modules/@emotion/styled/dist/styled.browser.esm.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/defineProperty":"../node_modules/@babel/runtime/helpers/defineProperty.js","react":"../node_modules/react/index.js","@emotion/is-prop-valid":"../node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js","@emotion/core":"../node_modules/@emotion/core/dist/core.browser.esm.js","@emotion/utils":"../node_modules/@emotion/utils/dist/utils.browser.esm.js","@emotion/serialize":"../node_modules/@emotion/serialize/dist/serialize.browser.esm.js"}],"../node_modules/@emotion/styled/dist/styled.browser.esm.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33197,11 +33197,13 @@ const Home = () => {
   }, /*#__PURE__*/_react.default.createElement("h1", null, "HomePage"), /*#__PURE__*/_react.default.createElement("ul", {
     className: "wrapper"
   }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_router.Link, {
-    to: "/grid-examples/example-1"
+    to: "/grid-examples/example-1",
+    className: "button"
   }, "Grid Example 1")), /*#__PURE__*/_react.default.createElement("li", {
     className: "list-item"
   }, /*#__PURE__*/_react.default.createElement(_router.Link, {
-    to: "/grid-examples/code-demo"
+    to: "/grid-examples/code-demo",
+    className: "button"
   }, "Grid Code Demo"))));
 };
 
@@ -33422,20 +33424,79 @@ var _styled = _interopRequireDefault(require("@emotion/styled"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const ContentContainer = _styled.default.nav`
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 20px;
+    padding-bottom: 20px;
 
+    .title {
+        color: white;
+    }
 `;
 
 const Navbar = () => {
-  return /*#__PURE__*/_react.default.createElement(ContentContainer, {
+  return /*#__PURE__*/_react.default.createElement(ContentContainer, null, /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement(_router.Link, {
     to: "/"
-  }, /*#__PURE__*/_react.default.createElement("h1", null, "Grid Workshop")));
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "title"
+  }, "Grid Workshop"))));
 };
 
 var _default = Navbar;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","@reach/router":"../node_modules/@reach/router/es/index.js","@emotion/styled":"../node_modules/@emotion/styled/dist/styled.browser.esm.js"}],"App.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","@reach/router":"../node_modules/@reach/router/es/index.js","@emotion/styled":"../node_modules/@emotion/styled/dist/styled.browser.esm.js"}],"components/Footer.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styled = _interopRequireDefault(require("@emotion/styled"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+const ContentContainer = _styled.default.footer`
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    .container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    a {
+        font-size: 14px;
+    }
+    p {
+        font-size: 14px;
+        color: #999999;
+    }
+`;
+
+const Footer = () => {
+  return /*#__PURE__*/_react.default.createElement(ContentContainer, null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container centered"
+  }, /*#__PURE__*/_react.default.createElement("p", null, "Created by ", /*#__PURE__*/_react.default.createElement("a", {
+    href: "https://Louiefitzpatrick.org"
+  }, "Louie Fitzpatrick"), " ", new Date().getFullYear()), /*#__PURE__*/_react.default.createElement("p", {
+    className: "m-b-0"
+  }, "Content inspired by ", /*#__PURE__*/_react.default.createElement("a", {
+    href: "https://frontendmasters.com"
+  }, "Front End Masters"))));
+};
+
+var _default = Footer;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","@emotion/styled":"../node_modules/@emotion/styled/dist/styled.browser.esm.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -33452,20 +33513,24 @@ var _CodeDemo = _interopRequireDefault(require("./lessons/grid/CodeDemo"));
 
 var _Navbar = _interopRequireDefault(require("./components/Navbar"));
 
+var _Footer = _interopRequireDefault(require("./components/Footer"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const App = () => {
-  return /*#__PURE__*/_react.default.createElement(_react.default.StrictMode, null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Navbar.default, null), /*#__PURE__*/_react.default.createElement(_router.Router, null, /*#__PURE__*/_react.default.createElement(_Home.default, {
+  return /*#__PURE__*/_react.default.createElement(_react.default.StrictMode, null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "page-container"
+  }, /*#__PURE__*/_react.default.createElement(_Navbar.default, null), /*#__PURE__*/_react.default.createElement(_router.Router, null, /*#__PURE__*/_react.default.createElement(_Home.default, {
     path: "/"
   }), /*#__PURE__*/_react.default.createElement(_GridExamples.default, {
     path: "/grid-examples/example-1"
   }), /*#__PURE__*/_react.default.createElement(_CodeDemo.default, {
     path: "/grid-examples/code-demo"
-  }))));
+  })), /*#__PURE__*/_react.default.createElement(_Footer.default, null)));
 };
 
 (0, _reactDom.render)(_react.default.createElement(App), document.getElementById("root"));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","@reach/router":"../node_modules/@reach/router/es/index.js","./Home":"Home.js","./lessons/grid/GridExamples":"lessons/grid/GridExamples.js","./lessons/grid/CodeDemo":"lessons/grid/CodeDemo.js","./components/Navbar":"components/Navbar.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","@reach/router":"../node_modules/@reach/router/es/index.js","./Home":"Home.js","./lessons/grid/GridExamples":"lessons/grid/GridExamples.js","./lessons/grid/CodeDemo":"lessons/grid/CodeDemo.js","./components/Navbar":"components/Navbar.js","./components/Footer":"components/Footer.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -33493,7 +33558,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52010" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61486" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
